@@ -45,6 +45,33 @@ The DBConnection class is responsible for creating and managing a connection to 
 
 To use this class, simply call the getConnection() method, which will return a Connection object that can be used to execute SQL queries.
 
-Configuration
+## Configuration
 
-This class assumes that the database is running on the default MariaDB port of 3306, and that the database name is "employees". If your database is running on a different port or has a different name, you can modify the DB_URL, USER, and PASS constants accordingly.
+This class assumes that the database is running on the default MariaDB port of 3306, and that the database name is "employees". 
+If your database is running on a different port or has a different name, you can modify the DB_URL, USER, and PASS constants accordingly.
+
+# Employee Class
+
+The Employee class is a simple Java class that represents an employee. It contains the following properties:
+
+    id: an integer that represents the employee's unique ID.
+    firstName: a string that represents the employee's first name.
+    lastName: a string that represents the employee's last name.
+    email: a string that represents the employee's email address.
+    department: a string that represents the employee's department.
+    salary: a float that represents the employee's salary.
+
+## Constructors
+
+The Employee class has the following constructors:
+
+    Employee(): a no-argument constructor.
+    Employee(int id, String firstName, String lastName, String email, String department, int salary): a constructor that takes in all the properties as arguments.
+    Employee(String firstName, String lastName, String email, String department, int salary): a constructor that takes in all the properties except id as arguments.
+
+## Getters and Setters
+
+The Employee class has getters and setters for all its properties.
+Overridden Methods
+
+The Employee class overrides the toString() method to provide a string representation of the Employee object.
